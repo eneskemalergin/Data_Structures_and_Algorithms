@@ -4,7 +4,7 @@ class Date:
     # Creates an object instance for the specified Gregorian date.
     def __init__(self, month, day, year):
         self._julianDay = 0
-        assert self._isValidGregorian(month, day, year), "Invalid Gregorian date."
+        # assert self._isValidGregorian(month, day, year), "Invalid Gregorian date."
 
         # If first line of the equation, T = (M-14)/12, has to be changed
         # since Python's implemenation of integer division is not the same
