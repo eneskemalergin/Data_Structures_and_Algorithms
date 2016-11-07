@@ -24,7 +24,7 @@ class Bag:
 
     # Returns an iterator for traversing the list of items.
     def __iter__(self, item):
-
+        return _BagIterator(self._theItems)
 
 # An iterator for the bag ADT implemented as a Python List
 class _BagIterator:

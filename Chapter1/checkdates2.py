@@ -1,7 +1,7 @@
 # Modified version of checkdates.py
 # Now we can store dates from user in our bag
 
-from linerbag import Bag
+from linearbag import Bag
 from date import Date
 
 def main():
