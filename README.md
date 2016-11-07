@@ -24,7 +24,7 @@ Contents
 ---
 
 1. [Data Structures and Algorithms Using Python](https://www.amazon.com/Data-Structures-Algorithms-Using-Python/dp/0470618299)
-    - Chapter 1: Abstract Data Types
+    - [Chapter 1: Abstract Data Types](https://github.com/eneskemalergin/Data_Structures_and_Algorithms/tree/master/Chapter1)
     - Chapter 2: Arrays
     - Chapter 3: Sets and Maps
     - Chapter 4: Algorithm Analysis
