@@ -11,7 +11,7 @@ def main():
     date = promptAndExtractDate()
     while date is not None:
         if date <= bornBefore:
-            print("Is at least 21 years of age: ", date)
+            print("Is at least 21 years of age: " + str(date))
         date = promptAndExtractDate()
 
 

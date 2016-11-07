@@ -38,7 +38,7 @@ class Date:
     # Returns the date as a string in Gregorian format.
     def __str__(self):
         month, day, year = self._toGregorian()
-        return "%02d/%02d/%04/d" % (month, day, year)
+        return "%02d/%02d/%04d" % (month, day, year)
 
     # Logically compares the two dates.
     def __eq__(self, otherDate):
