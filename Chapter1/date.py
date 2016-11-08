@@ -124,12 +124,13 @@ class Date:
 		return (self.dayOfWeek()>=0 and self.dayOfWeek()<=4)
 
     # Checks if the date is a spring or autumn equinox
-    def isEquinox(self):
-        pass
-
-    # Check if the date is the summer or winter solstice
-    def isSolstice(self):
-        pass
+    def isEquinox( self ):
+        return (self.day() == 20 and self.month() == 3) or \
+               (self.day() == 22 and self.month() == 9)
+   # Check if the date is the summer or winter solstice
+    def isSolstice( self ):
+        return (self.day() == 21 and self.month() == 6) or \
+               (self.day() == 22 and self.month() == 12)
 
     # Logically compares the two dates.
 	def comparable(self, otherDate):
@@ -156,6 +157,11 @@ class Date:
         elif month == 2: #I explicitly do not account for leap years
             if day < 1 or day > 28:
                 return False
+
+    # string method with additional calendar divider    
+    def asGreogrian( self, divchar = '/'):
+        month, day, year = self._toGregorian()
+        return '%02d%s%02d%s%04d' % (month, divchar, day, divchar, year)
 
     # Returns the Gregorian date as a tuple: (month, day, year)
     def _toGregorian(self):
