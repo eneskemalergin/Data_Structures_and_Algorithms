@@ -2,12 +2,14 @@
 
 from array_class import Array2D
 
+filename = "StudentGrades.txt"
+
 # Open the text file for reading.
 gradeFile = open(filename, "r")
 
 # Extract the first two values which indicate the size of the array.
-numExams = int(gradeFile.readline())
 numStudents = int(gradeFile.readline())
+numExams = int(gradeFile.readline())
 
 # Create the 2-D array to store the grades.
 examGrades = Array2D(numStudents, numExams)
