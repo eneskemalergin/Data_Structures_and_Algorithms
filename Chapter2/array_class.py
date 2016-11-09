@@ -84,10 +84,6 @@ class Array2D:
         the1dArray = self._theRows[row]
         the1dArray[col] = value
 
-
-
-
-
 # An iterator for Array ADT.
 class _ArrayIterator:
     def __init__(self, theArray):

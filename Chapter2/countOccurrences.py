@@ -1,8 +1,8 @@
 # Counting occurrences in text file using Array ADT
-from array_class import Array
+from array_class import Array1D
 
 # Array theCounters created with size of 127 (ASCII characters)
-theCounters = Array(127)
+theCounters = Array1D(127)
 # theCounters elements initialized to 0
 theCounters.clear(0)
 
