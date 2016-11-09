@@ -1,18 +1,22 @@
 # Main program that plays the game of life.
 from life import LifeGrid
 
-# Define the initial configuration of live cells.
+# # Define the initial configuration of live cells.
 INIT_CONFIG = [(1,1), (1,2), (2,2), (3,2)]
-
-# Set the size of the grid.
-GRID_WIDTH = 5
-GRID_HEIGHT = 5
-
-# Indicate the number of generations.
-NUM_GENS = 8
+#
+# # Set the size of the grid.
+# GRID_WIDTH = 5
+# GRID_HEIGHT = 5
+#
+# # Indicate the number of generations.
+# NUM_GENS = 8
 
 def main():
     # Construct the game grid and configure it.
+    GRID_WIDTH = int(input("Enter width for the grid: "))
+    GRID_HEIGHT = int(input("Enter height for the grid: "))
+    NUM_GENS = int(input("Enter number of generations: "))
+
     grid = LifeGrid(GRID_WIDTH, GRID_HEIGHT)
     grid.configure(INIT_CONFIG)
 
@@ -43,7 +47,15 @@ def evolve(grid):
 
 # Prints a text-based representation of the game grid.
 def draw(grid):
-    pass
+    for row in range(grid.numRows()):
+        for col in range(grid.numCols()):
+            if grid.isLiveCell(row, col):
+                print '1 ',
+            else:
+                print '0 ',
+        print ''
+    print ''
+
 
 # Executes the main routine.
 if __name__ == '__main__':

@@ -31,7 +31,11 @@ class Matrix:
 
     # Creates and returns a new matrix that is the transpose of this matrix.
     def transpose(self):
-        pass
+        newMatrix = Matrix( self.numCols(), self,numRows() )
+        for i in range( self.numCols() ):
+            for j in range( self.numRows() ):
+                newMatrix[ i, j ] = self[ i, j ]
+        return newMatrix
 
     # Creates and returns a new matrix that results from matrix addition.
     def __add__(self, rhsMatrix):
@@ -50,8 +54,26 @@ class Matrix:
 
     # Creates and returns a new matrix that results from matrix substraction.
     def __sub__(self, rhsMatrix):
-        pass
+        assert rhsMatrix.numRows() == self.numRows() and \
+                rhsMatrix.numCols() == self.numCols(), \
+                "Matrix sizes not compatible for the add operation"
+
+        # Create the new matrix
+        newMatrix = Matrix(self.numRows(), self.numCols())
+        for i in range( self.numRows() ):
+            for j in range( self.numCols() ):
+                newMatrix[ i, j ] = self[ i, j ] - rhsMatrix[ i, j ]
+        return newMatrix
 
     # Creates and returns a new matrix that results from matrix multiplication,
     def __mul__(self, rhsMatrix):
-        pass
+        assert rhsMatrix.numRows() == self.numRows() and \
+                rhsMatrix.numCols() == self.numCols(), \
+                "Matrix sizes not compatible for the add operation"
+
+        # Create the new matrix
+        newMatrix = Matrix(self.numRows(), self.numCols())
+        for i in range( self.numRows() ):
+            for j in range( self.numRows() ):
+                newMatrix[ i ,j ] = sum( [self[ i, x] * rhsMatrix[ x, j] for x in range( self.numCols())] )
+        return newMatrix

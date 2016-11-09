@@ -24,8 +24,8 @@ class LifeGrid:
     # Configures the grid to contain the given live cells.
     def configure(self, coordList):
         # Clear the game grid.
-        for i in range(numRows):
-            for j in range(numCols):
+        for i in range(self.numRows()):
+            for j in range(self.numCols()):
                 self.clearCell(i,j)
 
         # Set the indicated cells to be alive.
@@ -34,17 +34,26 @@ class LifeGrid:
 
     # Does the indicated cells to be alive
     def isLiveCell(self, row, col):
-        return self._grid[row, col] == GameGrid.LIVE_CELL
+        return self._grid[row, col] == LifeGrid.LIVE_CELL
 
     # Clears the indicated cell by setting it to dead.
     def clearCell(self, row, col):
-        self._grid[row, col] = GameGrid.DEAD_CELL
+        self._grid[row, col] = LifeGrid.DEAD_CELL
 
     # Sets the indicated cell to be alive
     def setCell(self, row, col):
-        self._grid[row, col] = GameGrid.LIVE_CELL
+        self._grid[row, col] = LifeGrid.LIVE_CELL
 
     # Returns the number of live neighbors for the given cell.
     def numLiveNeighbors(self, row, col):
-        pass
-        
+        result = 0
+        for i in range(row - 1, col + 1):
+            for j in range(col - 1, col + 2):
+                if i > self._grid.numRows() or i < 0 or \
+                j > self._grid.numCols() or j < 0:
+                    counter = 0
+                else:
+                    counter = self._grid[i, j]
+                result += counter
+        result -= self._grid[row, col]
+        return result
