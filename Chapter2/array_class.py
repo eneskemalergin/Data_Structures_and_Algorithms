@@ -2,7 +2,7 @@
 
 import ctypes
 
-class Array:
+class Array1D:
     # Creates an array with size.
     def __init__(self, size):
         assert size > 0, "Array size must be > 0"
@@ -42,11 +42,11 @@ class Array2D:
     # Creates a 2-D array of size numRows x numCols.
     def __init__(self, numRows, numCols):
         # Create a 1-D array to store an array reference for each row
-        self._theRows = Array(numRows)
+        self._theRows = Array1D(numRows)
 
         # Create the 1-D arrays for each row of the 2-D array.
         for i in range(numRows):
-            self._theRows[i] = Array(numCols)
+            self._theRows[i] = Array1D(numCols)
 
     # Returns the number of rows in the 2-D array.
     def numRows(self):
@@ -82,7 +82,7 @@ class Array2D:
             "Array subscript out of range."
 
         the1dArray = self._theRows[row]
-        the1dArray[col] = value 
+        the1dArray[col] = value
 
 
 

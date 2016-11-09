@@ -1,5 +1,5 @@
 # Counting occurrences in text file using Array ADT
-from array import Array
+from array_class import Array
 
 # Array theCounters created with size of 127 (ASCII characters)
 theCounters = Array(127)
