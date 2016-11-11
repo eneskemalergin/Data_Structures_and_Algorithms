@@ -5,9 +5,9 @@
 - [ ] Finish writing notes in notebook
 - [x] Define and Implement Set ADT
 - [x] Write a small snippet to verify usage of Set ADT
-- [ ] Define and Implement Map ADT
-- [ ] Write a small snippet to verify usage of Map ADT
-- [ ] Define and Implement MultiArray ADT
+- [x] Define and Implement Map ADT
+- [x] Write a small snippet to verify usage of Map ADT
+- [x] Define and Implement MultiArray ADT
 - [ ] Write a small snippet to verify usage of MultiArray ADT
 - [ ] Implement Sales Report application
 - [ ] Modify and make necessary addition to Set ADT
