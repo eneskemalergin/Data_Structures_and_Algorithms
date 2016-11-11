@@ -7,7 +7,6 @@ class Set:
         else:
             self._theElements = list()
 
-
     # Returns the number of items in the set.
     def __len__(self):
         return len(self._theElements)
@@ -74,21 +73,21 @@ class Set:
     def __str__(self):
         return "Set: ", self._theElements
 
+    # Addition operation method which uses union() method
     def __add__(self, setB):
-        # union
-        pass
+        return self.union(setB)
 
+    # Multiplication operation method which uses intersect() method
     def __mul__(self, setB):
-        # intersect
-        pass
+        return self.intersect(setB)
 
+    # Subtraction operation method which uses difference() method
     def __sub__(self, setB):
-        # Difference
-        pass
+        return self.difference(setB)
 
+    # comparison operation method which uses isSubsetOf() method
     def __lt__(self, setB):
-        # isSubsetOf
-        pass
+        return self.isSubsetOf(setB)
 
 
 # Iterator class for set __iter__
