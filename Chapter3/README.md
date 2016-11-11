@@ -2,7 +2,7 @@
 
 ### To Do List:
 
-- [ ] Finish writing notes in notebook
+- [x] Finish writing notes in notebook
 - [x] Define and Implement Set ADT
 - [x] Write a small snippet to verify usage of Set ADT
 - [x] Define and Implement Map ADT
