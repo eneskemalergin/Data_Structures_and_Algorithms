@@ -4,7 +4,7 @@
 
 - [ ] Finish writing notes in notebook
 - [x] Define and Implement Set ADT
-- [ ] Write a small snippet to verify usage of Set ADT
+- [x] Write a small snippet to verify usage of Set ADT
 - [ ] Define and Implement Map ADT
 - [ ] Write a small snippet to verify usage of Map ADT
 - [ ] Define and Implement MultiArray ADT
