@@ -1,8 +1,12 @@
 # Implementation of the Set ADT container using a Python List.
 class Set:
     # Creates an empty set instance.
-    def __init__(self):
-        self._theElements = list()
+    def __init__(self, *initElements):
+        if initElements != None:
+            self._theElements = list(initElements)
+        else:
+            self._theElements = list()
+
 
     # Returns the number of items in the set.
     def __len__(self):
@@ -31,7 +35,7 @@ class Set:
 
     # Determines if this set is a subset of setB.
     def isSubsetOf(self, setB):
-        for element in self:
+        for element in self._theElements:
             if element not in setB:
                 return False
         return True
@@ -47,17 +51,47 @@ class Set:
 
     # Creates a new set from the intersection: self set and setB
     def intersect(self, setB):
-        pass
+        newSet = Set()
+        for element in setB:
+            if element in self:
+                newSet.add(element)
+        return newSet
+
 
     # Creates a new set from the difference: self set and setB
     def difference(self, setB):
-        pass
+        newSet = Set()
+        for element in setB:
+            if element not in self:
+                newSet.add(element)
+        return newSet
 
     # Returns an itertor for traversing the list of items.
     def __iter__(self):
         return _SetIterator(self._theElements)
 
+    # Returns the set as a string representation
+    def __str__(self):
+        return "Set: ", self._theElements
 
+    def __add__(self, setB):
+        # union
+        pass
+
+    def __mul__(self, setB):
+        # intersect
+        pass
+
+    def __sub__(self, setB):
+        # Difference
+        pass
+
+    def __lt__(self, setB):
+        # isSubsetOf
+        pass
+
+
+# Iterator class for set __iter__
 class _SetIterator:
     def __init__( self, theList ):
         self._setItems = theList
