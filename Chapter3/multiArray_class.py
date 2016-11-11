@@ -61,4 +61,8 @@ class MultiArray:
 
     # Computes the factor values used in the index equation.
     def _computeFactors(self):
-        pass
+        for j in range(len(dim)):
+            for d in dim[j+1:]:
+                print d
+                self[j] *= d
+        return self

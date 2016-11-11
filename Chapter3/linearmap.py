@@ -46,9 +46,21 @@ class Map:
         # When not found, return None.
         return None
 
-class _MapIterator:
-    def __iter__(self):
-        pass
+class _mapIterator:
+    def __init__( self, aList ):
+        self._list = aList
+        self._curNdx = 0
+
+    def __iter__( self ):
+        return self
+
+    def __next__( self ):
+        if self._curNdx < len( self._list ):
+            item = self._list[ self._curNdx ]
+            self._curNdx += 1
+            return item
+        else:
+            raise StopIteration
 
 # Storage class for holding the key/value pairs.
 class _MapEntry:
