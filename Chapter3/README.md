@@ -13,6 +13,6 @@
 - [x] Modify and make necessary addition to Set ADT
 - [ ] Modify and make necessary addition to Map ADT
 - [ ] Modify and make necessary addition to MultiArray ADT
-- [ ] Define and Implement Triangle ADT
-- [ ] Add more exercise for ```salesReport.py```
-- [ ] Make sure all ADTs' working
+- [ ] Define and Implement TriangleArray ADT
+- [ ] Write a small snippet to verify usage of TriangleArray ADT
+- [ ] Define and Implement Set ADT again using Bag ADT
