@@ -75,9 +75,29 @@ class Set:
 
         return newSet
 
+    def difference(self, setB):
+        newSet = Set()
+        a = 0
+        b = 0
 
 
-    # The remaining mehtods go here.
+    def intersect(self, setB):
+        newSet = Set()
+        a = 0
+        b = 0
+
+    # def isSubsetOf(self, setB):
+    #     newSet
+
+    def __add__(self, setB):
+        return self.union()
+
+    def __sub__(self, setB):
+        return self.difference()
+
+    def __mul__(self):
+        return self.intersect()
+
 
     def __iter__(self):
         return _SetIterator(self._theElements)
