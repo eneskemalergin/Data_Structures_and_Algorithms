@@ -2,10 +2,19 @@
 
 import random
 
+def generateTest(length):
+    return random.sample(xrange(1, 101), length)
+
+
 def main():
-    _list = random.sample(xrange(1, 101), 10)
-    print("Randomized list: ", _list)
-    print("Sorted List: ", insertionSort(_list))
+    given_list = [80,7,24,16,43,91,35,2,19,72]
+    print("Given Randomized list: ", given_list)
+    print("Sorted List: ", insertionSort(given_list))
+
+    for _ in range(1):
+        _list = generateTest(5)
+        print("Randomized list: ", _list)
+        print("Sorted List: ", insertionSort(_list))
 
 # Sorts a sequence in ascending order using the insertion sort algorithm.
 def insertionSort(theSeq):
