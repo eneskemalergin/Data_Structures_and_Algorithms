@@ -17,4 +17,4 @@ a text string.
 - [ ] Add findPath(), reset(), and draw() methods for the Maze class.
 - [ ] Modify the solve() method in Maze ADT to return a vector containing tuples representing the path through the maze.
 - [ ] Implement Postfix Calculator ADT
-- [ ] Extend the methods in Postfix Calculator ADT 
+- [ ] Extend the methods in Postfix Calculator ADT
