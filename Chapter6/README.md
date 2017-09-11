@@ -4,8 +4,8 @@
 
 - [X] Finish chapter notes in ipynb
 - [X] Define and Implement Node Class to use in following Implementations
-- [ ] Define and Implement Single Linked List Implementation
-- [ ] Add examples and verify that Linked List Structure is Working
+- [X] Define and Implement Single Linked List Implementation
+- [X] Add examples and verify that Linked List Structure is Working
 - [ ] Define and Implement Bag ADT using Linked Lists
 - [ ] Write a small snippet to verify usage of Bag ADT
 - [ ] Define and Implement SparseMatrix ADT using Linked Lists
