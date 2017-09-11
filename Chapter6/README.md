@@ -2,7 +2,8 @@
 
 ### To Do List:
 
-- [ ] Finish chapter notes in ipynb
+- [X] Finish chapter notes in ipynb
+- [X] Define and Implement Node Class to use in following Implementations
 - [ ] Define and Implement Single Linked List Implementation
 - [ ] Add examples and verify that Linked List Structure is Working
 - [ ] Define and Implement Bag ADT using Linked Lists
@@ -19,4 +20,4 @@
 - [ ] Implement a new version of Map ADT using an unsorted linked list
 - [ ] Implement a new version of Map ADT using a sorted linked list
 - [ ] Modify and make necessary addition to Polynomials ADT
-- [ ] Define and Implement BigInteger ADT 
+- [ ] Define and Implement BigInteger ADT
