@@ -17,5 +17,3 @@ class Node:
                 node = node.next
             else:
                 raise StopIteration()
-
-    
