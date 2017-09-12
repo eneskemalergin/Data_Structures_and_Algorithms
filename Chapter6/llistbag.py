@@ -38,7 +38,7 @@ class Bag:
 
         # Unlink the node and return the item.
         self._size -= 1
-        if curNode is head:
+        if curNode is self._head:
             self._head = curNode.next
         else:
             predNode.next = curNode.next
@@ -62,7 +62,7 @@ class _BagIterator:
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         if self._curNode is None:
             raise StopIteration
         else:
