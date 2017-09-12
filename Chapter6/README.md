@@ -8,7 +8,7 @@
 - [X] Add examples and verify that Linked List Structure is Working
 - [X] Define and Implement Bag ADT using Linked Lists
 - [X] Write a small snippet to verify usage of Bag ADT
-- [ ] Define and Implement SparseMatrix ADT using Linked Lists
+- [X] Define and Implement SparseMatrix ADT using Linked Lists
 - [ ] Write a small snippet to verify usage of SparseMatrix ADT
 - [ ] Define and Implement Polynomials ADT using Linked Lists
 - [ ] Write a small snippet to verify usage of Polynomials ADT
