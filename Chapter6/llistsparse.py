@@ -12,7 +12,7 @@ class SparseMatrix:
         return len(self._listOfRows)
 
     # Return the number of columns in the matrix
-    def numRows(self):
+    def numCols(self):
         return self._numCols
 
     # Return the value of element (i,j): x[i,j]
