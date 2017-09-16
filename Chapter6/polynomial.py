@@ -144,7 +144,6 @@ class Polynomial:
 
         return newPoly
 
-
     # Helper method for appending terms to the polynomial
     def _appendTerm(self, degree, coefficient):
         if coefficient != 0.0:

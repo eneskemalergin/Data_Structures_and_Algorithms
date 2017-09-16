@@ -11,7 +11,7 @@
 - [X] Define and Implement SparseMatrix ADT using Linked Lists
 - [X] Write a small snippet to verify usage of SparseMatrix ADT
 - [X] Define and Implement Polynomials ADT using Linked Lists
-- [ ] Write a small snippet to verify usage of Polynomials ADT
+- [X] Write a small snippet to verify usage of Polynomials ADT
 - [ ] Modify and make necessary addition to Single Linked List Implementation
 - [ ] Modify and make necessary addition to SparseMatrix ADT built this chapter
 - [ ] Complete Bag ADT by adding essential methods  

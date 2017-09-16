@@ -39,7 +39,6 @@ def main():
     # temp = LLSMatrix - LLSMatrix3 # This should be able to work
     # new_temp = LLSMatrix - LLSMatrix2 # This should give error
 
-    
 
 if __name__ == '__main__':
     main()
