@@ -8,6 +8,11 @@ class SinglyLinkedList:
     def __init__(self):
         self.head = None
 
+    def checkOrder(self):
+        """Checks if linked list is ordered or not:
+         Returns Boolean"""
+        pass
+
     def add(self, data):
         newNode = Node(data)
         if self.head == None:
@@ -28,6 +33,23 @@ class SinglyLinkedList:
         while curNode is not None and curNode.data != target:
             curNode = curNode.next
         return curNode is not None
+
+    def orderedSearch(self, target):
+        """Searches the target on the linked lists:
+        """
+        if order != None: # If the checkOrder function is ran and we have order variable
+            if order == True:
+                # Complete the method
+                pass
+            else:
+                print("orderedSearch is cannot be done in unordered Linked List")
+        else: # If we did not check the Order yet,
+            order = checkOrder()
+            if order == True:
+                # Complete the method
+                pass
+            else:
+                print("orderedSearch is cannot be done in unordered Linked List")
 
     def remove(self, target):
         predNode = None
